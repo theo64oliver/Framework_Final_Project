@@ -1,2 +1,2 @@
 # Framework_Final_Project
-Gym Management Website. Contributors are : Hugo FRANGIAMONE, Mathys POPOF-MORIN, Paul FERREIRA, Theo OLIVER
+Gym Management Website. Contributors are : Hugo FRANGIAMONE, Mathys POPOFF-MORIN, Paul FERREIRA, Theo OLIVER
