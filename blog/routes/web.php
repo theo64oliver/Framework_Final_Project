@@ -31,3 +31,11 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('users', UserController::class);
     Route::resource('products', ProductController::class);
 });
+
+Route::get('/member', function(){
+	return view('member');
+});
+
+Route::get('/trainer', function(){
+	return view('trainer');
+});
