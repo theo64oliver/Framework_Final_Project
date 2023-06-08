@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 
 class LoginController extends Controller
 {
@@ -21,18 +23,6 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 	
-    protected function authenticated($request, $user) 
-    {
-	 if ($user->hasRole('writer');) 
-	 {
-	 	return redirect('/trainer');
-	 }
-	 else 
-	 {
-	 	return redirect('/member');
-	 }
-    }
-
     /**
      * Where to redirect users after login.
      *
