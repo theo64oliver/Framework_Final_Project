@@ -32,11 +32,11 @@ class LoginController extends Controller
     public function authenticated(Request $request, $user)  
     {
 
-        if($user->hasrole('Admin')){
-            return redirect('member');
+        if($user->hasrole(2)){
+            return redirect('Trainer');
         }
-        if($user->hasrole('Member')){
-            return redirect('trainer');
+        if($user->hasrole(3)){
+            return redirect('Member');
         }
     }
     /**
