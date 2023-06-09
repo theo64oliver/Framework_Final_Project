@@ -29,11 +29,30 @@
 		  color: #ffffff;
 		}
 		
-		.quote {
+		.title_header
+		{
 		   color: #ffffff;
-		   -webkit-animation: glow 1s ease-in-out infinite alternate;
-  		   -moz-animation: glow 1s ease-in-out infinite alternate;
+		    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  		    -moz-animation: glow 1s ease-in-out infinite alternate;
  		   animation: glow 1s ease-in-out infinite alternate;
+		}
+		
+		.image {
+		  position: absolute;
+		  right:150px;
+		  top:100px
+		}
+		
+		.quote {
+		   color: #000000;
+		   display: inline-block;
+    		   margin-left: 75px;
+		}
+		
+		.by {
+    		    display: inline-block;
+    		    margin-left: 300px;
+    		    font-style: italic;
 		}
 	
 
@@ -65,16 +84,21 @@
             
             
             <div class="header" id="myHeader">
-  	    	<h1>GYM INSHAPE</h1>
+  	    	<h1 class="title_header">GYM INSHAPE</h1>
   	    	@if (Route::has('login'))
-                <div class="login_register" style="position: absolute;right:20px;top:40px">
+                <div class="login_register" style="position: absolute;right:20px;top:30px">
                     @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
+                        <button href="{{ url('/home') }}" class="home_button">Home</button>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+                        <form action="{{ route('login') }}">
+         		    <button type="submit">Log in</button>
+      			</form>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                            <form action="{{ route('register') }}">
+         		    	<button type="submit">Register</button>
+      			    </form>
+
                         @endif
                     @endauth
                 </div>
@@ -82,14 +106,40 @@
 	    </div>
 	    
 	    <div class="quote" id="myQuote">
-  	    	<h2>"Work hard in silence and let success become Huge and Dry." By Damnnn</h2>
+	    <br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+  	    	<h2>"Work hard in silence and let success become Huge and Dry." <br></h2>
+  	    	<pre class="by">By Damnnn</pre>
 	    </div>
             
             <div class="image" id="myImage">
-            	<img src="/images/Gym_Inshape.png" alt='Cover Image'/>
+            	<img src="/images/thumbnail_Subject.png" alt='Cover Image'/>
             </div>
             
             <div class="content">
+            <br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
   <h3>On Scroll Sticky Header</h3>
   <p>The header will stick to the top when you reach its scroll position.</p>
   <p>Scroll back up to remove the sticky effect.</p>
