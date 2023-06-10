@@ -8,20 +8,28 @@
                 <div class="card-body">
                     @php
                         session_start();
-                        if(isset($_SESSION['ID']))
+                        if(isset($_SESSION['sum']))
                         {
-                            echo $_SESSION['ID'];
+                            @endphp 
+                            <p> My expenses: </p>
+                            @php
+                            echo $_SESSION['sum'];
                         }
                         else
                         {
-                            echo "no";
+                            @endphp
+                            <p>To show the sum of all of your expenses please click this button:</p>
+                            <form action="{{ route('member.init') }}" method="GET">
+                                <button type="submit" class="btn btn-primary">My Expenses</button> 
+                            </form> 
+                            @php
                         }
                         session_destroy();
                     @endphp
-                    <form action="{{ route('member.init') }}" method="GET">
-                        <button type="submit" class="btn btn-primary">Submit</button> 
-                    </form> 
-                    <a href="{{ route('classlist') }}"> link </a>             
+                    </br>
+                    </br>
+                    <a href="{{ route('classlist') }}">My Private Class</a>
+                    <a href="{{ route('checkin') }}">My History</a>               
                 </div>
             </div>
         </div>

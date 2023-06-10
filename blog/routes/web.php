@@ -7,6 +7,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MemberProcessController;
 use App\Http\Controllers\ListClassController;
+use App\Http\Controllers\CheckInController;
 use App\Http\Controllers\ProductController;
   
 /*
@@ -29,6 +30,7 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/member_process',[MemberProcessController::class, 'init'])->name('member.init');
 Route::get('/list_class_process',[ListClassController::class, 'init'])->name('list_class.init');
+Route::get('/check_in_process',[CheckInController::class, 'init'])->name('check_in.init');
 
 Route::get('/member_view ', function() {
     return view('member.init');
@@ -51,3 +53,7 @@ Route::get('/member', function () {
 Route::get('/class_list', function () {
     return view('Member.classlist');
 })->name('classlist');
+
+Route::get('/check_in_history', function () {
+    return view('Member.checkinhistory');
+})->name('checkin');

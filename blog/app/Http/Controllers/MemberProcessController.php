@@ -7,12 +7,12 @@ use Illuminate\View\View;
     
 class MemberProcessController extends Controller
 {
-    public $Member_ID;
     function init()
     {
         session_start();
         $Member_ID = DB::table('member')->where('email',Auth::user()->email)->value('member_id');
-        $_SESSION['ID'] = $Member_ID;
+        $res1 = DB::select('SELECT SUM(amount) FROM transaction where member_id = ?;',array($Member_ID));
+        $_SESSION['sum'] = $res1[0]->sum;
         return redirect()->route('member');
     }
 }

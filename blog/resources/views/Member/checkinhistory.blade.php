@@ -4,8 +4,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    <p> To show your registered class(es) please click this button: </p>
-                    <form action="{{ route('list_class.init') }}" method="GET">
+                    <p> To show your check-in history please press this button: </p>
+                    <form action="{{ route('check_in.init') }}" method="GET">
                         <button type="submit" class="btn btn-primary">SHOW</button> 
                     </form>
                     @php
@@ -15,10 +15,7 @@
                         @endphp
                         <table>
                             <tr>
-                                <th>Name of the Class</th>
-                                <th>Start</th>
-                                <th>Duration (in minutes)</th>
-                                <th>Sport</th>
+                                <th>Date Of Check-in</th>
                             </tr>
                             @php
                             $j = 0;
@@ -26,10 +23,7 @@
                             {
                                 @endphp
                                 <tr>
-                                    <th>@php echo $i->name; @endphp</th>
-                                    <th>@php echo $i->start; @endphp</th>
-                                    <th>@php echo $i->duration; @endphp</th>
-                                    <th>@php echo $_SESSION['Res2'][$j][0]->sport_name; @endphp</th>
+                                    <th>@php echo $i->check_in; @endphp</th>
                                 </tr>
                                 @php
                                 $j = $j +1;
