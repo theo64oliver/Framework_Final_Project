@@ -33,10 +33,10 @@ class LoginController extends Controller
     {
 
         if($user->hasrole(2)){
-            return redirect('Trainer');
+            return redirect('trainer');
         }
         if($user->hasrole(3)){
-            return redirect('Member');
+            return redirect('member');
         }
     }
     /**
