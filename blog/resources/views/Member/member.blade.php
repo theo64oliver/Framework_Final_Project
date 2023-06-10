@@ -5,16 +5,23 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in as a member') }}
+                    @php
+                        session_start();
+                        if(isset($_SESSION['ID']))
+                        {
+                            echo $_SESSION['ID'];
+                        }
+                        else
+                        {
+                            echo "no";
+                        }
+                        session_destroy();
+                    @endphp
+                    <form action="{{ route('member.init') }}" method="GET">
+                        <button type="submit" class="btn btn-primary">Submit</button> 
+                    </form> 
+                    <a href="{{ route('classlist') }}"> link </a>             
                 </div>
             </div>
         </div>

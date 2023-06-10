@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\MemberProcessController;
+use App\Http\Controllers\ListClassController;
 use App\Http\Controllers\ProductController;
   
 /*
@@ -25,6 +27,12 @@ Route::get('/', function () {
 Auth::routes();
   
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/member_process',[MemberProcessController::class, 'init'])->name('member.init');
+Route::get('/list_class_process',[ListClassController::class, 'init'])->name('list_class.init');
+
+Route::get('/member_view ', function() {
+    return view('member.init');
+})->name('member.view');
   
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RoleController::class);
@@ -38,4 +46,8 @@ Route::get('/trainer', function () {
 
 Route::get('/member', function () {
     return view('Member.member');
-});
+})->name('member');
+
+Route::get('/class_list', function () {
+    return view('Member.classlist');
+})->name('classlist');
