@@ -6,6 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
+                    <h1> You're logging as a Member </h1>
                     @php
                         session_start();
                         if(isset($_SESSION['sum']))
