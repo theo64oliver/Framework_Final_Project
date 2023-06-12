@@ -5,16 +5,32 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in as a member') }}
+                    <h1> You're logging as a Member </h1>
+                    @php
+                        session_start();
+                        if(isset($_SESSION['sum']))
+                        {
+                            @endphp 
+                            <p> My expenses: </p>
+                            @php
+                            echo $_SESSION['sum'];
+                        }
+                        else
+                        {
+                            @endphp
+                            <p>To show the sum of all of your expenses please click this button:</p>
+                            <form action="{{ route('member.init') }}" method="GET">
+                                <button type="submit" class="btn btn-primary">My Expenses</button> 
+                            </form> 
+                            @php
+                        }
+                        session_destroy();
+                    @endphp
+                    </br>
+                    </br>
+                    <a href="{{ route('classlist') }}">My Private Class</a>
+                    <a href="{{ route('checkin') }}">My History</a>               
                 </div>
             </div>
         </div>

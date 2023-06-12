@@ -28,6 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
+
     
     public function authenticated(Request $request, $user)  
     {
@@ -39,6 +40,7 @@ class LoginController extends Controller
             return redirect('member');
         }
     }
+
     /**
      * Create a new controller instance.
      *
