@@ -30,9 +30,9 @@ Gym Management Website. Contributors are : Hugo FRANGIAMONE, Mathys POPOFF-MORIN
 ![image](https://github.com/theo64oliver/Framework_Final_Project/assets/94619213/16f9ee83-b6cf-451c-8f4a-3339b848fc79)
 
 
-## Member Access
+### Member Access
 .........................
 
-## Trainer Access
+### Trainer Access
 ..........................
 
