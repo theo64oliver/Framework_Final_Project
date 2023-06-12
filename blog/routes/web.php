@@ -48,24 +48,24 @@ Route::group(['middleware' => ['auth']], function() {
 
 Route::get('/trainer', function () {
     return view('trainer');
-});
+})->name('trainer');
 
 Route::get('/member', function () {
     return view('member');
 })->name('member');
 
 Route::get('/class_list', function () {
-    return view('Member.classlist');
+    return view('classlist');
 })->name('classlist');
 
 Route::get('/class_list_trainer', function () {
-    return view('Trainer.classlisttrainer');
+    return view('classlisttrainer');
 })->name('classlisttrainer');
 
 Route::get('/machine_list', function () {
-    return view('Trainer.machinelist');
+    return view('machinelist');
 })->name('machinelist');
 
 Route::get('/check_in_history', function () {
-    return view('Member.checkinhistory');
+    return view('checkinhistory');
 })->name('checkin');
