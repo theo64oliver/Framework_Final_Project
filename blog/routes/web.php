@@ -47,7 +47,7 @@ Route::group(['middleware' => ['auth']], function() {
 });
 
 Route::get('/trainer', function () {
-    return view('Trainer.trainer');
+    return view('trainer');
 });
 
 Route::get('/member', function () {

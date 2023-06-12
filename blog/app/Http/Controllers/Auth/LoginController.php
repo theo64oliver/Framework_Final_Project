@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use \Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -28,7 +28,19 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = 'member';
+
+    
+    public function authenticated(Request $request, $user)  
+    {
+
+        if($user->hasrole(2)){
+            return redirect('trainer');
+        }
+        if($user->hasrole(3)){
+            return redirect('member');
+        }
+    }
+
     /**
      * Create a new controller instance.
      *
