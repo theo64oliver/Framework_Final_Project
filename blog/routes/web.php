@@ -51,7 +51,7 @@ Route::get('/trainer', function () {
 });
 
 Route::get('/member', function () {
-    return view('Member.member');
+    return view('member');
 })->name('member');
 
 Route::get('/class_list', function () {

@@ -40,7 +40,7 @@
 		.image {
 		  position: absolute;
 		  right:150px;
-		  top:100px
+		  top:100px;
 		}
 		
 		.quote {
@@ -64,6 +64,53 @@
 		  position: fixed;
 		  top: 0;
 		  width: 100%;
+		}
+		
+		.Price_Tab {
+		  position: absolute;
+		  right: 12.5%;
+		  top:125%;
+		}
+		
+		table,
+		td {
+   		 border: 1px solid #333;
+   		 width:1000px;
+   		 text-align : center;
+   		 vertical-align:top;
+		}
+
+		thead,
+		tfoot {
+    		 background-color: #333;
+   		 color: #fff;
+		}
+		
+		.tab1_title {
+		    text-decoration: underline;
+		}
+		.button {
+  		 background-color: #FFC0CB; /* Green */
+  		 border: none;
+		 color: white;
+		 padding: 16px 32px;
+		 text-align: center;
+		 text-decoration: none;
+		 display: inline-block;
+		 font-size: 16px;
+		 margin: 4px 2px;
+		 transition-duration: 0.4s;
+		 cursor: pointer;
+}
+	 	.button_sub {
+		  background-color: white; 
+		  color: black; 
+		  border: 2px solid #FFC0CB;
+		}
+
+		.button_sub:hover {
+		  background-color: #FFC0CB;
+		  color: white;
 		}
 		
 		@-webkit-keyframes glow {
@@ -122,36 +169,101 @@
             	<img src="/images/thumbnail_Subject.png" alt='Cover Image'/>
             </div>
             
-            <div class="content">
-            <br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-  <h3>On Scroll Sticky Header</h3>
-  <p>The header will stick to the top when you reach its scroll position.</p>
-  <p>Scroll back up to remove the sticky effect.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
+            <div class="Price_Tab">
+            	<table>
+    		    <thead>
+        		<tr>
+         	  	    <th colspan="3">Subscriptions</th>
+       	 	</tr>
+   		    </thead>
+   		    <tbody>
+     	 	  	<tr>
+          	  	    <td>
+          	  	        <div class="tab1_title">
+          	  	            <h3>BASIC</h3>
+          	  	        </div>
+          	  	        <div class="tab1_description">
+          	  	            -------------------------------------------
+          	  	            <br>
+          	  	            <h4>Included :</h4> 
+          	  	            - Access to all collective classes
+          	  	            <br>
+          	  	            - Gym Towel
+          	  	            <br>
+          	  	            - Gym Tumbler
+          	  	            <br>
+          	  	        </div>
+          	  	        <div class="tab1_price">
+          	  	            <h1>20$/month</h1>
+				    <button class="button button_sub">SUBSCRIBE</button>
+				    <br>
+          	  	        </div>
+          	  	    </td>
+          	  	    
+           	 	    <td>
+           	 	        <div class="tab1_title">
+          	  	            <h3>PREMIUM</h3>
+          	  	        </div>
+          	  	        <div class="tab2_description">
+          	  	            -------------------------------------------
+          	  	            <br>
+          	  	            <h4>Included :</h4>
+          	  	            - Access to all collective classes
+          	  	            <br>
+          	  	            - Access to all the equipments of the gym
+          	  	            <br>
+          	  	            - Gym Towel
+          	  	            <br>
+          	  	            - Gym Tumbler
+          	  	            <br>
+          	  	            - 15% Discount on our food supplements store
+          	  	            <br>
+          	  	            - Decreasing price each year
+          	  	            <br>
+          	  	        </div>
+          	  	        <div class="tab2_price">
+          	  	            <h1>30$/month</h1>
+          	  	            <button class="button button_sub">SUBSCRIBE</button>
+          	  	            <br>
+          	  	        </div>
+           	 	    </td>
+           	 	    
+           	 	    <td>
+           	 	        <div class="tab1_title">
+          	  	            <h3>VIP</h3>
+          	  	        </div>
+          	  	        <div class="tab3_description">
+          	  	            -------------------------------------------
+          	  	            <br>
+          	  	            <h4>Included :</h4>
+          	  	            - Access to all collective classes
+          	  	            <br>
+          	  	            - Access to all the equipments of the gym
+          	  	            <br>
+          	  	            - 10 private classes/month
+          	  	            <br>
+          	  	            - Gym Towel
+          	  	            <br>
+          	  	            - Gym Tumbler
+          	  	            <br>
+          	  	            - 30% Discount on our food supplements store
+          	  	            <br>
+          	  	            - Decreasing price each year
+          	  	            <br>
+          	  	        </div>
+          	  	        <div class="tab3_price">
+          	  	            <h1>50$/month</h1>
+          	  	            <button class="button button_sub">SUBSCRIBE</button>
+          	  	            <br>
+          	  	            <br>
+          	  	        </div>
+           	 	    </td>
+       	 	</tr>
+   		    </tbody>
+		</table>
+		<br>
+		<br>
+            </div>
         </div>
     </body>
 </html>
