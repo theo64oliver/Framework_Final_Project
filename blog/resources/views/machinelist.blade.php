@@ -30,7 +30,7 @@
                                     <th>@php echo $i->supplier; @endphp</th>
                                     <th>@php echo $i->price; @endphp</th>
                                     <th>@php echo $i->last_maintenance; @endphp</th>
-                                    <th>@php echo $i->date_of_purchase; @endphp</th>
+                                    <th>@php echo $i->date_of_purchace; @endphp</th>
                                 </tr>
                                 @php
                             }

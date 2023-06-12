@@ -32,7 +32,7 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/member_process',[MemberProcessController::class, 'init'])->name('member.init');
 Route::get('/list_class_process',[ListClassController::class, 'init'])->name('list_class.init');
-Route::get('/list_class_process',[ListClassTrainerController::class, 'init'])->name('list_class_trainer.init');
+Route::get('/list_class_trainer_process',[ListClassTrainerController::class, 'init'])->name('list_class_trainer.init');
 Route::get('/list_machine_process',[ListMachineController::class, 'init'])->name('list_machine.init');
 Route::get('/check_in_process',[CheckInController::class, 'init'])->name('check_in.init');
 
