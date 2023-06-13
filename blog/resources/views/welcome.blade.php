@@ -67,8 +67,8 @@
 		}
 		
 		.Price_Tab {
-		  position: absolute;
-		  right: 12.5%;
+		  display: flex;
+		  justify-content: center;
 		  top:125%;
 		}
 		
@@ -168,7 +168,34 @@
             <div class="image" id="myImage">
             	<img src="/images/thumbnail_Subject.png" alt='Cover Image'/>
             </div>
-            
+			<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+				<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+				<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+            	<br>
+				<br>
+            	<br>
+            	<br>
+				<br>
+            	<br>
+            	<br>
+            	<br>
             <div class="Price_Tab">
             	<table>
     		    <thead>
