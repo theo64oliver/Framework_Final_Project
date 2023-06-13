@@ -29,7 +29,7 @@
                     @endphp
                     </br>
                     </br>
-                    <a href="{{ route('classlist') }}">My Private Class</a>
+                    <a href="{{ route('classlist') }}">My Classes</a>
                     <a href="{{ route('checkin') }}">My History</a>               
                 </div>
             </div>
