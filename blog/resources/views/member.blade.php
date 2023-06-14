@@ -32,6 +32,7 @@
                     <a href="{{ route('classlist') }}">My Private Class</a>
                     <a href="{{ route('checkin') }}">My History</a> 
                     <a href="{{ route('request') }}">Request a course</a>              
+
                 </div>
             </div>
         </div>

@@ -50,7 +50,7 @@ Route::group(['middleware' => ['auth']], function() {
 
 Route::get('/trainer', function () {
     return view('trainer');
-});
+})->name('trainer');
 
 Route::get('/member', function () {
     return view('member');

@@ -31,11 +31,10 @@ class RegisterController extends Controller
      */
     public function authenticated(Request $request, $user)  
     {
-
-        if(Auth::user()->hasrole(2)){
+        if($user->hasrole(1)){
             return redirect('trainer');
         }
-        if($user->hasrole(3)){
+        if($user->hasrole(2)){
             return redirect('member');
         }
     }
