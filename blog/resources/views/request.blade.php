@@ -19,9 +19,9 @@
         @csrf
 		<input type="text" name="Name" id="Name" value="Name"/><br><br>
 		<input type="Date" name="Start" id="Start" value ="Start"/> Choose a Date <br> <br>
-		<input type="number" name="Duration" id="Duration" value="Duration" /> <br> <br>
-		<input type="text" name="Sport_Name" id="Sport_Name" /> <br> <br>
-		<input type="submit" value="Valider" />
+		<input type="number" name="Duration" id="Duration" value=0 /> Duration (in minute) <br> <br>
+		<input type="text" name="Sport_Name" id="Sport_Name" /> Sport name<br> <br>
+		<input type="submit" value="Submit" />
 </form>	
  
 
