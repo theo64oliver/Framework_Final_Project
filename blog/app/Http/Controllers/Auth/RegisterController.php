@@ -29,8 +29,16 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    public function authenticated(Request $request, $user)  
+    {
 
+        if(Auth::user()->hasrole(2)){
+            return redirect('trainer');
+        }
+        if($user->hasrole(3)){
+            return redirect('member');
+        }
+    }
     /**
      * Create a new controller instance.
      *

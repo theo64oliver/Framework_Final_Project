@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Auth;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
 use Http\Controlles\MemberProcessController;
