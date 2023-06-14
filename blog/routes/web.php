@@ -32,6 +32,7 @@ Auth::routes();
   
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/member_process',[MemberProcessController::class, 'init'])->name('member.init');
+Route::get('/banking_info',[BankingController::class, 'init'])->name('bank.init');
 Route::get('/list_class_process',[ListClassController::class, 'init'])->name('list_class.init');
 Route::get('/list_class_trainer_process',[ListClassTrainerController::class, 'init'])->name('list_class_trainer.init');
 Route::get('/list_machine_process',[ListMachineController::class, 'init'])->name('list_machine.init');
@@ -92,3 +93,7 @@ Route::get('/machine_list', function () {
 Route::get('/check_in_history', function () {
     return view('checkinhistory');
 })->name('checkin');
+
+Route::get('/banking', function () {
+    return view('banking');
+})->name('banking');

@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-body">
                     <style>
-                        .button {
+                    	.button {
                             background-color: #FFC0CB; /* Green */
                             border: none;
                             color: white;
@@ -30,23 +30,30 @@
                             background-color: #FFC0CB;
                             color: white;
                         }
+                            
+                        p {
+                            font-size: 1.2em;
+                        }
                     </style>
-
-                    <h1> You're logging as a Trainer</h1>
-                    <form action="{{ route('banking') }}">
-                        <button class="button button_sub">Banking Account</button>
-                    </form>
-                    <form action="{{ route('machinelist') }}">
-                        <button class="button button_sub">My Machines</button>
-                    </form>
-                    <form action="{{ route('classlisttrainer') }}">
-                        <button class="button button_sub">My Classes</button>
-                    </form>
-                    <form action="{{ route('createform') }}">
-                        <button class="button button_sub">Create a new class</button>
-                    </form>
-                    <form action="{{ route('delform') }}">
-                        <button class="button button_sub">Delete an existing class</button>
+                    <h1> Your Account </h1>
+                    @php
+                        session_start();
+                        if(isset($_SESSION['sum']))
+                        {
+                            echo $_SESSION['sum'];
+                        }
+                        else
+                        {
+                            @endphp
+                            <p style="color: red">Error getting your account information. Please retry</p>
+                            @php
+                        }
+                        session_destroy();
+                    @endphp
+                    </br>
+                    </br>
+                    <form action="{{ route('trainer') }}">
+                        <button class="button button_sub">Return</button>
                     </form>
                 </div>
             </div>
