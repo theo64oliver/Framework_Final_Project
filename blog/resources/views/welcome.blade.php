@@ -21,21 +21,6 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
-		.header {
-		  padding: 10px 16px;
-		  position: sticky;
-		  top: 0;
-		  background: #000;
-		  color: #ffffff;
-		}
-		
-		.title_header
-		{
-		   color: #ffffff;
-		    -webkit-animation: glow 1s ease-in-out infinite alternate;
-  		    -moz-animation: glow 1s ease-in-out infinite alternate;
- 		   animation: glow 1s ease-in-out infinite alternate;
-		}
 		
 		.image {
 		  position: absolute;
@@ -89,6 +74,7 @@
 		.tab1_title {
 		    text-decoration: underline;
 		}
+		
 		.button {
   		 background-color: #FFC0CB; /* Green */
   		 border: none;
@@ -113,15 +99,30 @@
 		  color: white;
 		}
 		
-		@-webkit-keyframes glow {
-  		from {
-   		 text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
- 		 }
- 		 to {
-   		 text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-	  	 }
+		.header {
+		 padding: 10px 16px;
+		 position: sticky;
+		 top: 0;
+		 background: #000;
+		 color: #ffffff;
 		}
-
+			
+		.title_header
+		{
+		 color: #ffffff;
+		 -webkit-animation: glow 1s ease-in-out infinite alternate;
+	  	 -moz-animation: glow 1s ease-in-out infinite alternate;
+	 	 animation: glow 1s ease-in-out infinite alternate;
+		}
+		
+		@-webkit-keyframes glow {
+	  	from {
+	   	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	 	 }
+	 	 to {
+	   	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+		 }
+		}
         </style>
         
         
@@ -129,28 +130,27 @@
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             
-            
             <div class="header" id="myHeader">
-  	    	<h1 class="title_header">GYM INSHAPE</h1>
-  	    	@if (Route::has('login'))
-                <div class="login_register" style="position: absolute;right:20px;top:30px">
-                    @auth
-							<form action="{{ route('home') }}">
-         		    	<button type="submit">Home</button>
-                    @else
-                        <form action="{{ route('login') }}">
-         		    <button type="submit">Log in</button>
-      			</form>
+	  	    	<h1 class="title_header">GYM INSHAPE</h1>
+	  	    	@if (Route::has('login'))
+		        <div class="login_register" style="position: absolute;right:20px;top:30px">
+		            @auth
+								<form action="{{ route('home') }}">
+		 		    	<button type="submit">Home</button>
+		            @else
+		                <form action="{{ route('login') }}">
+		 		    <button type="submit">Log in</button>
+	      			</form>
 
-                        @if (Route::has('register'))
-                            <form action="{{ route('register') }}">
-         		    	<button type="submit">Register</button>
-      			    </form>
+		                @if (Route::has('register'))
+		                    <form action="{{ route('register') }}">
+		 		    	<button type="submit">Register</button>
+	      			    </form>
 
-                        @endif
-                    @endauth
-                </div>
-            @endif
+		                @endif
+		            @endauth
+		        </div>
+		    @endif
 	    </div>
 	    
 	    <div class="quote" id="myQuote">
