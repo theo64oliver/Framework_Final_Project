@@ -31,7 +31,6 @@ class RegisterController extends Controller
      */
     public function authenticated(Request $request, $user)  
     {
-
         if($user->hasrole(1)){
             return redirect('trainer');
         }
@@ -39,7 +38,6 @@ class RegisterController extends Controller
             return redirect('member');
         }
     }
-
     /**
      * Create a new controller instance.
      *
