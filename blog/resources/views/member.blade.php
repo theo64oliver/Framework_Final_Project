@@ -48,10 +48,8 @@
                         else
                         {
                             @endphp
-                            <p>To show the sum of all of your expenses please click this button :</p>
-                            <form action="{{ route('member.init') }}" method="GET">
-                                <button type="submit" class="button button_sub">My Expenses</button> 
-                            </form> 
+                            <p>To show the sum of all of your expenses please click this button:</p>
+                            <a href="/member_process" class="button button_sub">My Expenses</a> 
                             @php
                         }
                         session_destroy();
@@ -60,7 +58,7 @@
                     </br>
                     <p>Other actions :</p>
                     <form action="{{ route('classlist') }}">
-		 	<button class="button button_sub">My Private Class</button>
+		 	<button class="button button_sub">My Classes</button>
 	      	    </form>
 	      	    <form action="{{ route('checkin') }}">
 		 	<button class="button button_sub">My History</button>

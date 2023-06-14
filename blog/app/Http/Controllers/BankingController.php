@@ -10,8 +10,8 @@ class BankingController extends Controller
     function init()
     {
         session_start();
-
-        $_SESSION['sum'] = 999;
-        return redirect()->route('banking');
+        $res1 = DB::select('SELECT currentamount FROM bank_account WHERE bank_id = 1');
+        $_SESSION['sum'] = $res1[0]->currentamount;
+        return redirect()->route('trainer');
     }
 }

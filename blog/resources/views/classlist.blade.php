@@ -58,7 +58,6 @@
                                 <th>Name of the Class</th>
                                 <th>Start</th>
                                 <th>Duration (in minutes)</th>
-                                <th>Sport</th>
                             </tr>
                             @php
                             foreach($_SESSION['Res1'] as $i)
@@ -68,7 +67,6 @@
                                     <th>@php echo $i->name; @endphp</th>
                                     <th>@php echo $i->start; @endphp</th>
                                     <th>@php echo $i->duration; @endphp</th>
-                                    <th>@php echo $i->sport_id; @endphp</th>
                                 </tr>
                                 @php
                             }

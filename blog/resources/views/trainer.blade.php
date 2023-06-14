@@ -31,11 +31,28 @@
                             color: white;
                         }
                     </style>
-
                     <h1> You're logging as a Trainer</h1>
-                    <form action="{{ route('banking') }}">
-                        <button class="button button_sub">Banking Account</button>
-                    </form>
+                    @php
+                        session_start();
+                        if(isset($_SESSION['sum']))
+                        {
+                            @endphp 
+                            <p> Current amount inside the bank account: </p>
+                            @php
+                            echo $_SESSION['sum'];
+                        }
+                        else
+                        {
+                            @endphp
+                            <a href = "{{ route('bank.init') }}" class="button button_sub">Banking Account</a>
+                            @php
+                        }
+                        session_destroy();
+                    @endphp
+
+                    </br>
+                    </br>
+                    <p>Other actions :</p>
                     <form action="{{ route('machinelist') }}">
                         <button class="button button_sub">My Machines</button>
                     </form>

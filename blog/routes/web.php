@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BankingController;
 use App\Http\Controllers\MemberProcessController;
 use App\Http\Controllers\ListClassController;
 use App\Http\Controllers\ListClassTrainerController;
@@ -58,6 +59,7 @@ Route::get('/home', function () {
         } 
     return view('member');
 })->name('home');
+
 Route::get('/trainer', function () {
     return view('trainer');
 })->name('trainer');
