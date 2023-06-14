@@ -48,6 +48,13 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('products', ProductController::class);
 });
 
+Route::get('/home', function () {
+    if(auth()->user()->hasRole(1))
+        {
+            return view('trainer');
+        } 
+    return view('member');
+})->name('home');
 Route::get('/trainer', function () {
     return view('trainer');
 })->name('trainer');

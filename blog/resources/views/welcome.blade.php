@@ -135,7 +135,8 @@
   	    	@if (Route::has('login'))
                 <div class="login_register" style="position: absolute;right:20px;top:30px">
                     @auth
-                        <button href="{{ url('/home') }}" class="home_button">Home</button>
+							<form action="{{ route('home') }}">
+         		    	<button type="submit">Home</button>
                     @else
                         <form action="{{ route('login') }}">
          		    <button type="submit">Log in</button>
