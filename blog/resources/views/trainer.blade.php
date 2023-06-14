@@ -38,6 +38,12 @@
 	      	    <form action="{{ route('classlisttrainer') }}">
 		 	<button class="button button_sub">My Classes</button>
 	      	    </form>
+              <form action="{{ route('createform') }}">
+		 	<button class="button button_sub">Create a new class</button>
+	      	    </form>
+              <form action="{{ route('delform') }}">
+		 	<button class="button button_sub">Delete an existing class</button>
+	      	    </form>
                 </div>
             </div>
         </div>
