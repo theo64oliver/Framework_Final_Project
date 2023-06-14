@@ -30,10 +30,8 @@
                     </br>
                     </br>
                     <a href="{{ route('classlist') }}">My Private Class</a>
-                    </br>
                     <a href="{{ route('checkin') }}">My History</a> 
-                    </br>
-                    <a href="{{ route('request') }}">Request a course</a>       
+                    <a href="{{ route('request') }}">Request a course</a>              
 
                 </div>
             </div>
