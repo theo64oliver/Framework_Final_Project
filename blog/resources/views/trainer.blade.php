@@ -8,7 +8,10 @@
                 <div class="card-body">
                     <h1> You're logging as a Trainer</h1>
                     <a href="{{ route('machinelist') }}">My Machines</a>
+                    </br>
                     <a href="{{ route('classlisttrainer') }}">My Classes</a>
+                    </br>
+                    <a href="{{ route('createform') }}">Create a new class</a>
                 </div>
             </div>
         </div>
