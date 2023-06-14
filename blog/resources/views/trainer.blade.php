@@ -12,6 +12,8 @@
                     <a href="{{ route('classlisttrainer') }}">My Classes</a>
                     </br>
                     <a href="{{ route('createform') }}">Create a new class</a>
+                    </br>
+                    <a href="{{ route('delform') }}">Delete a class</a>
                 </div>
             </div>
         </div>

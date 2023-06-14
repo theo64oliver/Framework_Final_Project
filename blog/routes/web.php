@@ -38,6 +38,7 @@ Route::get('/list_machine_process',[ListMachineController::class, 'init'])->name
 Route::get('/check_in_process',[CheckInController::class, 'init'])->name('check_in.init');
 Route::post('/bug_process','BugController@init')->name('request.insert');
 Route::post('/createclass','CreateClassController@init')->name('class.insert');
+Route::post('/delclass','DeleteClassController@init')->name('class.remove');
 
 Route::get('/member_view ', function() {
     return view('member.init');
@@ -71,6 +72,10 @@ Route::get('/request', function () {
 Route::get('/createform', function () {
     return view('createclass');
 })->name('createform');
+
+Route::get('/delform', function () {
+    return view('deleteform');
+})->name('delform');
 
 Route::get('/class_list', function () {
     return view('classlist');
