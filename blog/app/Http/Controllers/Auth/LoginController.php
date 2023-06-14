@@ -30,16 +30,14 @@ class LoginController extends Controller
      */
 
     
-    public function authenticated(Request $request, $user)  
-    {
-
-        if($user->hasrole(1)){
+     public function authenticated()
+     {
+        if(auth()->user()->hasRole(1))
+        {
             return redirect('trainer');
-        }
-        if($user->hasrole(2)){
-            return redirect('member');
-        }
-    }
+        } 
+        return redirect('member');
+     }
 
     /**
      * Create a new controller instance.

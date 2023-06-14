@@ -29,15 +29,14 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    public function authenticated(Request $request, $user)  
-    {
-        if($user->hasrole(1)){
+    public function authenticated()
+     {
+        if(auth()->user()->hasRole(1))
+        {
             return redirect('trainer');
-        }
-        if($user->hasrole(2)){
-            return redirect('member');
-        }
-    }
+        } 
+        return redirect('member');
+     }
     /**
      * Create a new controller instance.
      *
@@ -76,7 +75,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-        $user->assignRole(3);
+        $user->assignRole(2);
         return $user;
     }
 }
