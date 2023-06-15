@@ -25,3 +25,4 @@
         <input type="text" name="Machine" id="Machine" /> Machines used<br> <br>
 		<input type="submit" value="Submit" />
 </form>	
+@endsection
