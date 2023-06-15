@@ -1,5 +1,3 @@
-@extends('layouts.app')
-
 @section('content')
 <div class="row justify-content-center">
     <div class="col-md-8">
@@ -23,6 +21,3 @@
 		<input type="text" name="Sport_Name" id="Sport_Name" /> Sport name<br> <br>
 		<input type="submit" value="Submit" />
 </form>	
- 
-
-@endsection

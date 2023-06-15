@@ -1,5 +1,3 @@
-@extends('layouts.app')
-
 @section('content')
 <div class="row justify-content-center">
     <div class="col-md-8">
@@ -19,5 +17,4 @@
         @csrf
 		<input type="number" name="Class_ID" id="Class_ID" value=0 /> ID of the lesson to remove <br> <br>
         <input type="submit" value="Submit" />
-</form>	
-@endsection
+</form>
