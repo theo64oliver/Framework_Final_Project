@@ -19,4 +19,5 @@
         @csrf
 		<input type="number" name="Class_ID" id="Class_ID" value=0 /> ID of the lesson to remove <br> <br>
         <input type="submit" value="Submit" />
-</form>	
+</form>
+@endsection	
