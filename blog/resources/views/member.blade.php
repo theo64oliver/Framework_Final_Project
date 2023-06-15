@@ -57,15 +57,11 @@
                     </br>
                     </br>
                     <p>Other actions :</p>
-                    <form action="{{ route('classlist') }}">
-		 	<button class="button button_sub">My Classes</button>
-	      	    </form>
-	      	    <form action="{{ route('checkin') }}">
-		 	<button class="button button_sub">My History</button>
-	      	    </form>
-	      	    <form action="{{ route('request') }}">
-		 	<button class="button button_sub">Request a Course</button>
-	      	    </form>           
+                    <a href="{{ route('classlist')}}" class="button button_sub">My Classes</a>
+                    </br>
+	      	        <a href="{{ route('checkin') }}" class="button button_sub">My History</a>
+                    </br>
+	      	        <a href="{{ route('request') }}" class="button button_sub">Request a Course</a>        
 
                 </div>
             </div>

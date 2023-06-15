@@ -53,18 +53,13 @@
                     </br>
                     </br>
                     <p>Other actions :</p>
-                    <form action="{{ route('machinelist') }}">
-                        <button class="button button_sub">My Machines</button>
-                    </form>
-                    <form action="{{ route('classlisttrainer') }}">
-                        <button class="button button_sub">My Classes</button>
-                    </form>
-                    <form action="{{ route('createform') }}">
-                        <button class="button button_sub">Create a new class</button>
-                    </form>
-                    <form action="{{ route('delform') }}">
-                        <button class="button button_sub">Delete an existing class</button>
-                    </form>
+                    <a href="{{ route('machinelist') }}" class="button button_sub">My Machines</a>
+                    </br>
+                    <a href="{{ route('classlisttrainer') }}" class="button button_sub">My Classes</a>
+                    </br>
+                    <a href="{{ route('createform') }}" class="button button_sub">Create a new class</a>
+                    </br>
+                    <a href="{{ route('delform') }}" class="button button_sub">Delete an existing class</a>
                 </div>
             </div>
         </div>
